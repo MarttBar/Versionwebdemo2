@@ -6,7 +6,7 @@ $name = trim($_POST['UserName']);
 $email = trim($_POST['UserEmail']);
 $subject = trim($_POST['subject']);
 $message = trim($_POST['message']);
-$to = "your-email@email.com"; // Change with your email address
+$to = "contacto@cassen.mx"; // Change with your email address
 
 // Email address validation - works with php 5.2+
 function is_email_valid($email) {
