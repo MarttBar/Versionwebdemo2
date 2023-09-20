@@ -445,73 +445,57 @@
     </section>
     <!-- End  blog Section-->
     <!-- Start  take-action Section-->
-    <section class="take-action elf-section has-dark-bg" id="take-action">
-      <div class="overlay-photo-image-bg  " data-bg-img="assets/images/sections-bg-images/2.jpg" data-bg-opacity=".25"> </div>
-      <div class="cta-wrapper">
-        <div class="container">
-          <div class="sec-heading  centered mb-0 ">
-            <div class="content-area"><span class=" pre-title       wow fadeInUp " data-wow-delay=".2s">Contactanos</span>
-              <h2 class=" title    wow fadeInUp" data-wow-delay=".4s"></h2>
-              <p class="subtitle   wow fadeInUp " data-wow-delay=".6s">Si quieres mas información ¡Contáctanos! <br></p>
+    <section class="contact-us-form-section  mega-section  ">
+      <div class="row">
+        <div class="col-12 ">
+          <div class="contact-form-panel">
+            <div class="sec-heading centered    ">
+              <div class="content-area">
+                <h2 class=" title    wow fadeInUp" data-wow-delay=".4s">Tienes preguntas ¡Contáctanos!</h2>
+              </div>
+            </div>
+            <div class="contact-form-inputs wow fadeInUp" data-wow-delay=".6s">
+              <div class="custom-form-area input-boxed"> 
+                <!--Form To have user messages-->
+                <form class="main-form" id="contact-us-form" action="php/send-mail.php" method="post"><span class="done-msg"></span>
+                  <div class="row ">
+                    <div class="col-12 col-lg-6">
+                      <div class="   input-wrapper">
+                        <input class="text-input" id="user-name" name="UserName" type="text"/>
+                        <label class="input-label" for="user-name"> Nombre <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6">
+                      <div class="   input-wrapper">
+                        <input class="text-input" id="user-email" name="UserEmail" type="email"/>
+                        <label class="input-label" for="user-email"> E-mail <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 ">
+                      <div class="   input-wrapper">
+                        <input class="text-input" id="msg-subject" name="subject" type="text"/>
+                        <label class="input-label" for="msg-subject"> Motivo <span class="req">*</span></label><span class="b-border"></span><span class="error-msg"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 ">
+                      <div class="   input-wrapper">
+                        <textarea class=" text-input" id="msg-text" name="message"></textarea>
+                        <label class="input-label" for="msg-text"> Comentario <span class="req">*</span></label><span class="b-border"></span><i></i><span class="error-msg"></span>
+                      </div>
+                    </div>
+                    <div class="col-12 submit-wrapper">
+                      <button class=" btn-solid" id="submit-btn" type="submit" name="UserSubmit">Enviar</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
             </div>
           </div>
-          <!--Start .see-more-area-->
-          <!--End Of .see-more-area        -->
-        </div>
-      </div>
-      <div class="form-area ">
-        <div class="mailchimp-form ">
-          <form class="one-field-form" method="post" action="#0">
-            <div class="field-group ">
-              <label class="email-label" for="email-input"></label>
-              <input class="email-input " type="text" value="" name="Nombre" id="asunto-input" placeholder="Nombre" autocomplete="off"/>
-              <div class="cta-area">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="form-area ">
-        <div class="mailchimp-form ">
-          <form class="one-field-form" method="post" action="#0">
-            <div class="field-group ">
-              <label class="email-label" for="email-input"></label>
-              <input class="email-input " type="text" value="" name="Asunto" id="asunto-input" placeholder="Telefono" autocomplete="off"/>
-              <div class="cta-area">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="form-area ">
-        <div class="mailchimp-form ">
-          <form class="one-field-form" method="post" action="#0">
-            <div class="field-group ">
-              <label class="email-label" for="email-input"></label>
-              <input class="email-input " type="email" value="" name="EMAIL" id="email-input" placeholder="Email" autocomplete="off"/>
-              <div class="cta-area">
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-
-      <div class="form-area ">
-        <div class="mailchimp-form ">
-          <form class="one-field-form" method="post" action="#0">
-            <div class="field-group ">
-              <label class="email-label" for="email-input"></label>
-              <input class="email-input " type="text" value="" name="ASUNTO" id="asunto-input" placeholder="Asunto" autocomplete="off"/>
-              <div class="cta-area">
-                <input class="btn-solid subscribe-btn" type="submit" value="Enviar" name="subscribe"/>
-              </div>
-            </div>
-          </form>
         </div>
       </div>
     </section>
+  </div>
+</section>
     <!-- End  take-action Section-->
     <!-- Start  page-footer Section-->
     <footer class="page-footer dark-color-footer" id="page-footer">
